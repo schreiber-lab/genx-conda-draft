@@ -1,0 +1,38 @@
+{
+  "channeldata_version": 1,
+  "packages": {
+    "genx3": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "description": null,
+      "dev_url": null,
+      "doc_source_url": null,
+      "doc_url": null,
+      "home": "http://genx.sourceforge.net/",
+      "icon_hash": "md5:7204de0b6310331393351a6470b1e4b2:27089",
+      "icon_url": "icons/genx3.png",
+      "identifiers": null,
+      "keywords": null,
+      "license": "GPL-3.0",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "recipe_origin": null,
+      "run_exports": {},
+      "source_git_url": null,
+      "source_url": "https://pypi.io/packages/source/g/genx3/genx3-3.4.12.tar.gz",
+      "subdirs": [
+        "noarch"
+      ],
+      "summary": "X-ray and Neutron reflectivity fitting software.",
+      "tags": null,
+      "text_prefix": true,
+      "timestamp": 1637920534,
+      "version": "3.4.12"
+    }
+  },
+  "subdirs": [
+    "noarch"
+  ]
+}
