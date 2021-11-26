@@ -1,0 +1,40 @@
+{
+  "info": {
+    "subdir": "noarch"
+  },
+  "packages": {
+    "genx3-3.4.12-py_5.tar.bz2": {
+      "app_entry": "genx_run",
+      "app_type": "desk",
+      "build": "py_5",
+      "build_number": 5,
+      "depends": [
+        "appdirs >1.2",
+        "h5py",
+        "jsonschema",
+        "matplotlib-base <3.5.0",
+        "numba",
+        "numpy >1.0",
+        "python >3.6,<3.10",
+        "scipy >0.5",
+        "vtk",
+        "wxpython >4.0"
+      ],
+      "icon": "7204de0b6310331393351a6470b1e4b2.png",
+      "license": "GPL-3.0",
+      "md5": "aa8631f1e748386344908de702d8f012",
+      "name": "genx3",
+      "noarch": "python",
+      "sha256": "6ccd29ab9a1087b13f4baa42224b25b2e76a9c402aa471db52062bc128f0f7b9",
+      "size": 4278313,
+      "subdir": "noarch",
+      "summary": "GenX3",
+      "timestamp": 1637920534963,
+      "type": "app",
+      "version": "3.4.12"
+    }
+  },
+  "packages.conda": {},
+  "removed": [],
+  "repodata_version": 1
+}
