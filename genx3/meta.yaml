@@ -1,0 +1,60 @@
+{% set name = "genx3" %}
+{% set version = "3.4.12" %}
+
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/genx3-{{ version }}.tar.gz
+  sha256: c8a5daabf5eb327222b898100a22c974607bde4fbcb37d29c02d10024e44bbd2
+
+build:
+  number: 5
+  script: {{ PYTHON }} -m pip install . -vv
+  noarch: python
+  entry_points:
+    - genx_run = genx.run:main
+  
+app:
+    entry: genx_run
+    icon: icon.png
+    summary: GenX3
+    type: desk
+
+requirements:
+  host:
+    - pip
+    - python
+  run:
+    - appdirs >1.2
+    - h5py
+    - matplotlib-base <3.5.0
+    - numpy >1.0
+    - python >3.6,<3.10
+    - scipy >0.5
+    - wxpython >4.0
+    - numba
+    - vtk
+    - jsonschema
+
+test:
+  imports:
+    - genx
+    - genx.core
+  commands:
+    - pip check
+  requires:
+    - pip
+
+about:
+  home: http://genx.sourceforge.net/
+  summary: X-ray and Neutron reflectivity fitting software.
+  license: GPL-3.0
+  license_file: LICENSE.txt
+
+extra:
+  recipe-maintainers:
+    - ADD_YOUR_GITHUB_ID_HERE
+    
